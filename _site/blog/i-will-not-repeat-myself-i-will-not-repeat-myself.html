@@ -1,0 +1,157 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+   <title>  I will not repeat myself, I will not repeat myself |  Micah Godbolt </title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+<link href="http://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600|Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/pygments/default.css">
+
+  <script src="/js/modernizr-2.5.3.js"></script>
+</head>
+<body>
+
+<div id="page">
+  <header id="header" role="banner" class="clearfix">
+   <div class="hello"><a href="/">Micah Godbolt</a></div>
+  </header>
+  <div class="byline">
+    <ul>
+      <li>FrontEndDeveloper</li>
+      <li>WebStandardsAdvocate</li>
+      <li>SassEvangelist</li>
+      <li>AudioEngineer</li>
+      <li>Musician</li>
+      <li>Husband</li>
+      <li>Father</li>
+      <li>BeerLover</li>
+      <li>FrisbeeThrower</li>
+      <li>MelBrooksQuoter</li>
+    </ul>
+  </div>
+
+    <section  role="main" id="main">
+
+ <div class="threecolleft">
+     <h3>Get In Touch!</h3>
+<p><a href="http://www.twitter.com/micahgodbolt" target="_blank">@micahgodbolt</a><br /><a href="https://plus.google.com/100749189589213497870/posts" target="_blank">Google Plus</a><br /><a href="http://www.github.com/micahgodbolt" target="_blank">Github</a><br /><a href="http://codepen.io/micahgodbolt" target="_blank">Codepen</a><br /><a href="http://drupal.org/user/488992" target="_blank">Drupal.org</a></p>
+</div>
+
+
+    <div class="threecolcenter">
+    <article class="blog">
+      <h2>I will not repeat myself, I will not repeat myself</h2>
+      <p>As I&#8217;ve mentioned before, I am going through the &#8220;Drupal 7 Module Development&#8221; book, trying to learn as much as I possibly can as I go from chapter to chapter. I still stand by my suggestion of <a href='teacher-said-show-my-work-so-i-am'>explaining your code in plain english</a>. That one technique has really served me well as I try to trace the flow of Drupal&#8217;s rendering process. Sure, it makes getting through a chapter take longer, but I always find the process worth while. Another thing I do that slows down my progress is typing out, by hand, every single line of code from the module examples.</p>
+<h2>Can't I just copy and paste?</h2>
+<p>Sure, I&#8217;ve downloaded the example files from the publisher&#8217;s website. I could easily read the chapter, copy/paste the files into my Drupal install, and view the results. Wouldn&#8217;t this be good enough? I could still go through and &#8216;show my work&#8217;, describing what is happening at each step. What could I possibly gain from typing array after array after blessed array? Well, after typing several dozen associative arrays, it was pretty obvious to me how I could improve my module development process.</p>
+
+<p>Here is a quick snippit from inside a schema array.</p>
+<div class='highlight'><pre><code class='php'><span class='x'>&#39;title&#39; =&gt; array(</span>
+<span class='x'>        &#39;description&#39; =&gt; &#39;The title of this artwork.&#39;,</span>
+<span class='x'>        &#39;type&#39; =&gt; &#39;varchar&#39;,</span>
+<span class='x'>        &#39;length&#39; =&gt; 255,</span>
+<span class='x'>        &#39;not null&#39; =&gt; TRUE,</span>
+<span class='x'>        &#39;default&#39; =&gt; &#39;&#39;,</span>
+<span class='x'>        ),</span>
+<span class='x'>      &#39;changed&#39; =&gt; array(</span>
+<span class='x'>        &#39;description&#39; =&gt; &#39;The Unix timestamp when the artwork was created.&#39;,</span>
+<span class='x'>        &#39;type&#39; =&gt; &#39;int&#39;,</span>
+<span class='x'>        &#39;not null&#39; =&gt; TRUE,</span>
+<span class='x'>        &#39;dafault&#39; =&gt; 0,</span>
+<span class='x'>        ),</span>
+</code></pre>
+</div>
+<p>I don&#8217;t know about you, but after moving my eyes from the book to the keyboard to type my 11th &#8216;=&gt;&#8217; I was determined to improve my typing speed. It didn&#8217;t require much. I noticed there is a very obvious pattern here with the array key and value, and decided I&#8217;d had enough.</p>
+<h2>There's a snippit for that</h2>
+<p>So the tl:dr of it all is that by forcing myself to write out every single line of this example code, I found the repetitive pieces of code that I could turn into a snippit in Sublime Text.</p>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;snippet&gt;</span>
+  <span class='nt'>&lt;content&gt;</span>
+&#39;${1:attribute}&#39; =&gt;
+<span class='nt'>&lt;/content&gt;</span>
+   <span class='nt'>&lt;tabTrigger&gt;</span>key<span class='nt'>&lt;/tabTrigger&gt;</span>
+<span class='nt'>&lt;scope&gt;</span>source.php<span class='nt'>&lt;/scope&gt;</span>
+<span class='nt'>&lt;/snippet&gt;</span>
+</code></pre>
+</div>
+<p>And now that I have this snippit in place I&#8217;ll keep typing every line, improving the speed and accuracy in which I can type out all of these associative arrays. I&#8217;ll keep looking for other common patterns that trip me up and keep working those into my coding regimen.</p>
+      </article>
+
+
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'micahgodbolt'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+
+
+     <div class="threecolright portfolio">
+  <h3>Recent Work</h3>
+
+<div>
+<a href="http://www.swwchapter.org/">Southwest Washington Chapters</a>
+  <p>Association website with user submitted calendar and news module.</p>
+  <img src="http://www.godbolt.me/sites/default/files/styles/large/public/swwchapter.png" width="480" height="348" alt="" /></div>
+<div >
+
+<div>
+  <a href="http://www.fish-marketing.com/our-work">Fish Marketing Portfolio</a>
+  <p>Portfolio page using Masonry jQuery plugin and custom lightbox/image slider.</p>
+</div>
+<img src="http://www.godbolt.me/sites/default/files/styles/large/public/fish-portfolio.png" width="480" height="348" alt="" /></div>
+
+</div>
+
+
+    </section>
+
+  <footer>
+
+
+  </footer>
+
+</div>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="../js/fittext.js"></script>
+  <script src="../js/scripts.js"></script>
+  <script async src="http://codepen.io:/assets/embed/ei.js"></script>
+
+  <!-- end scripts -->
+
+    <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+</body>
+</html>

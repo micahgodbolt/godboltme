@@ -1,0 +1,31 @@
+////////////////////////
+// Style Guide Partials
+//
+// Write a Style Guide for your website, building sub folders and partials
+//  in this folder, with everything being imported, in casading order,
+//  into this file.
+//
+// All Style Guide selectors should go in here, regardless of layout or design
+//  (but separating the two in here is a good idea).
+////////////////////////
+
+@import "fonts/fonts";
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+a {
+  color: #fd8f36;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: .55em;
+  color: #fd8f36;
+}

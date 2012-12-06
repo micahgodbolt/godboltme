@@ -1,0 +1,33 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+
+//Breakpoint settings
+
+
+$breakpoints: 'small' (200px 800px), 'large' (801px);
+
+
+
+
+//Susy Settings
+@include border-box-sizing;
+$total-columns: 12;
+$column-width: 5em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+$break-small: 800px;
+$break-large: 801px;
+
+@mixin respond-to($media) {
+  @if $media == small {
+    @media screen and (max-width: $break-small) { @content; }
+  }
+
+  @else if $media == large {
+    @media screen and (min-width: $break-large) { @content; }
+  }
+}

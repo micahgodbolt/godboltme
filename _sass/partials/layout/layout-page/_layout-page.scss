@@ -1,0 +1,83 @@
+////////////////////////
+// HTML/Page Template Layout
+//
+//
+//
+////////////////////////
+
+
+header {
+  @include container;
+}
+
+#main {
+  @include container;
+  overflow: hidden;
+}
+
+.threecolleft {
+  @include respond-to('large'){
+    @include span-columns(2);
+  }
+}
+
+.threecolcenter {
+  @include respond-to('large'){
+    @include span-columns(7);
+  }
+}
+
+.threecolright {
+  @include respond-to('large'){
+    @include span-columns(3 omega);
+  }
+}
+
+@include respond-to('small'){
+  .threecolright, .threecolcenter, .threecolleft{
+    transition: .2s all ease;
+    width: 100%;
+    padding: 3%;
+  }
+  .js{
+    .threecolleft {
+      margin-left: -100%;
+      float: left;
+    }
+
+    .threecolcenter {
+      margin-left: 0;
+      float: left;
+    }
+
+    .threecolright {
+      margin-right: -200%;
+      float: right;
+    }
+  }
+  .active-contact {
+    .threecolleft{
+      margin-left: 0;
+      width: 80%;
+    }
+    .threecolcenter{
+      margin-right: -100%;
+    }
+    .threecolright{
+      margin-right: -100%;
+      float: right;
+    }
+  }
+    .active-portfolio {
+    .threecolleft{
+      margin-left: -100%;
+    }
+    .threecolcenter{
+      margin-left: -90%;
+    }
+    .threecolright{
+      margin-right: 0;
+      width: 80%;
+    }
+  }
+}

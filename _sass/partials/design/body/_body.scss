@@ -1,0 +1,50 @@
+@import "portfolio";
+
+.blog {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: -2px;
+    width: 100%;
+    background: rgba(255,255,255,.1);
+  }
+  h2 {
+    margin-bottom: 0em;
+  }
+  .submitted {
+    display: none;
+  }
+
+  code {
+    word-wrap: break-word;
+    display: block;
+    background: #191919;
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgba(0,0,0,.6);
+    padding: .3em 1em;
+    @include box-shadow(inset 1px 1px 1px rgba(0,0,0,.1));
+  }
+
+  .readmore {
+    margin-top: 1em;
+    display: block;
+  }
+
+
+}
+
+.portfolio {
+  margin-bottom: 3em;
+  .submitted {
+    display: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

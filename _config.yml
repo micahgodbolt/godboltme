@@ -1,0 +1,5 @@
+permalink: /:categories/:title.html
+pygments: true
+auto: true
+server: true
+

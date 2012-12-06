@@ -1,0 +1,25 @@
+.portfolio-page {
+  img {
+    @include respond-to('large') {
+    float: left;
+    margin-right: 2em;
+    }
+  }
+  p {
+    margin-bottom: 3em;
+  }
+
+  a {
+    background: #FD8F36;
+    color: white;
+    padding: .3em .5em;
+    font-size: 1.2em;
+    @include border-radius(3px);
+    @include box-shadow(inset -1px -1px 1px rgba(0,0,0, .4), inset 1px 1px 1px rgba(255,255,255, .3));
+    &:hover {
+      @include box-shadow(inset 1px 1px 1px rgba(0,0,0, .2), inset -1px -1px 1px rgba(255,255,255, .2));
+      position: relative;
+      top: 1px;
+    }
+  }
+}
