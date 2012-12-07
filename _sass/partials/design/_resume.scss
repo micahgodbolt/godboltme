@@ -14,7 +14,14 @@
     }
   }
   .skills {
+    h2 {
+      margin-bottom: .2em;
+    }
     text-align: center;
+    div {
+      font-size: .8em;
+      color: #bbb;
+    }
   }
   article {
     background: #191919;

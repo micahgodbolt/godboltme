@@ -224,7 +224,16 @@ header:after {
 .resume .skills {
   text-align: center;
 }
-/* line 19, ../_sass/partials/design/_resume.scss */
+/* line 17, ../_sass/partials/design/_resume.scss */
+.resume .skills h2 {
+  margin-bottom: .2em;
+}
+/* line 21, ../_sass/partials/design/_resume.scss */
+.resume .skills div {
+  font-size: .8em;
+  color: #bbb;
+}
+/* line 26, ../_sass/partials/design/_resume.scss */
 .resume article {
   background: #191919;
   margin-bottom: 1.3em;
@@ -235,30 +244,30 @@ header:after {
   -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 26, ../_sass/partials/design/_resume.scss */
+/* line 33, ../_sass/partials/design/_resume.scss */
 .resume article .title {
   color: #fd8f36;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
   margin-top: .3em;
   line-height: 1.2;
 }
-/* line 31, ../_sass/partials/design/_resume.scss */
+/* line 38, ../_sass/partials/design/_resume.scss */
 .resume article .title em {
   font-size: .8em;
 }
-/* line 36, ../_sass/partials/design/_resume.scss */
+/* line 43, ../_sass/partials/design/_resume.scss */
 .resume article .location {
   font-size: .9em;
   color: #888;
 }
-/* line 42, ../_sass/partials/design/_resume.scss */
+/* line 49, ../_sass/partials/design/_resume.scss */
 .resume article li, .resume article .description {
   color: #ddd;
   font-size: .8em;
   line-height: 1.4;
   margin-bottom: .5em;
 }
-/* line 48, ../_sass/partials/design/_resume.scss */
+/* line 55, ../_sass/partials/design/_resume.scss */
 .resume article .description {
   margin-top: .8em;
 }
