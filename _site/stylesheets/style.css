@@ -204,6 +204,65 @@ header:after {
   }
 }
 
+/* line 2, ../_sass/partials/design/_resume.scss */
+.resume section {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+/* line 7, ../_sass/partials/design/_resume.scss */
+.resume section:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: -2px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+/* line 16, ../_sass/partials/design/_resume.scss */
+.resume .skills {
+  text-align: center;
+}
+/* line 19, ../_sass/partials/design/_resume.scss */
+.resume article {
+  background: #191919;
+  margin-bottom: 1.3em;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: .3em 1em;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+/* line 26, ../_sass/partials/design/_resume.scss */
+.resume article .title {
+  color: #fd8f36;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  margin-top: .3em;
+  line-height: 1.2;
+}
+/* line 31, ../_sass/partials/design/_resume.scss */
+.resume article .title em {
+  font-size: .8em;
+}
+/* line 36, ../_sass/partials/design/_resume.scss */
+.resume article .location {
+  font-size: .9em;
+  color: #888;
+}
+/* line 42, ../_sass/partials/design/_resume.scss */
+.resume article li, .resume article .description {
+  color: #ddd;
+  font-size: .8em;
+  line-height: 1.4;
+  margin-bottom: .5em;
+}
+/* line 48, ../_sass/partials/design/_resume.scss */
+.resume article .description {
+  margin-top: .8em;
+}
+
 /* line 1, ../_sass/partials/design/header/_header.scss */
 .hello {
   font-size: 40px;
@@ -329,7 +388,7 @@ body {
   word-wrap: break-word;
   display: block;
   background: #191919;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.6);
   padding: .3em 1em;
   -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -343,15 +402,13 @@ body {
 }
 
 /* line 41, ../_sass/partials/design/body/_body.scss */
-.portfolio {
+.portfolio div {
   margin-bottom: 3em;
 }
 /* line 43, ../_sass/partials/design/body/_body.scss */
-.portfolio .submitted {
-  display: none;
-}
-/* line 46, ../_sass/partials/design/body/_body.scss */
-.portfolio img {
-  max-width: 100%;
+.portfolio div img {
+  max-width: 90%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }

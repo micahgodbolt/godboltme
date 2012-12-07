@@ -1,0 +1,52 @@
+.resume {
+  section {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      bottom: -2px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+  .skills {
+    text-align: center;
+  }
+  article {
+    background: #191919;
+    margin-bottom: 1.3em;
+    background: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.3);
+    padding: .3em 1em;
+    @include box-shadow(inset 1px 1px 1px rgba(0,0,0,.1));
+    .title {
+      color: #fd8f36;
+      text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+      margin-top: .3em;
+      line-height: 1.2;
+      em {
+        font-size: .8em;
+      }
+
+    }
+    .location {
+        font-size: .9em;
+        color: #888;
+      }
+    ul {
+    }
+    li, .description {
+      color: #ddd;
+      font-size: .8em;
+      line-height: 1.4;
+      margin-bottom: .5em;
+    }
+    .description {
+      margin-top: .8em;
+    }
+  }
+}

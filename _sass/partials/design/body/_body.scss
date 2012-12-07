@@ -24,7 +24,7 @@
     word-wrap: break-word;
     display: block;
     background: #191919;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.2);
     border: 1px solid rgba(0,0,0,.6);
     padding: .3em 1em;
     @include box-shadow(inset 1px 1px 1px rgba(0,0,0,.1));
@@ -38,13 +38,12 @@
 
 }
 
-.portfolio {
+.portfolio div {
   margin-bottom: 3em;
-  .submitted {
-    display: none;
-  }
   img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
