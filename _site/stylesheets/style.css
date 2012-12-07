@@ -176,7 +176,7 @@ header:after {
 
 /* line 18, ../_sass/partials/layout/layout-page/_layout-header.scss */
 .byline {
-  height: 32px;
+  height: 36px;
   overflow: hidden;
   position: relative;
   padding: 3px 5%;
@@ -206,7 +206,7 @@ header:after {
 
 /* line 1, ../_sass/partials/design/header/_header.scss */
 .hello {
-  font-size: 130px;
+  font-size: 40px;
   text-align: center;
 }
 /* line 4, ../_sass/partials/design/header/_header.scss */
