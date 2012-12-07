@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-   <title>  Teacher said to show my work so I am |  Micah Godbolt </title>
+   <title>  Moving to Jekyll |  Micah Godbolt </title>
 
   <meta name="description" content="">
 
@@ -54,41 +54,36 @@
 
           <div class="threecolcenter">
     <article class="blog">
-      <h2>Teacher said to show my work so I am</h2>
-      <p>I have quite a bit on my plate with this current project. As the only developer I am tasked with the design, front end, and back end development of the entire site. With the design and front end coming together quite well in the past weeks I have been starting to focus on the back end. Having decided to build this site on Drupal, I knew there was going to be a steep learning curve to get to the point I wanted to be at.</p>
+      <h2>Moving to Jekyll</h2>
+      <p>As much as I am enjoying Drupal right now, the one place I was not enjoying it is on my own blog. Now I have no problem with Drupal and it&#8217;s ability to be a blogging platform. My issue was with performance on my cheap shared hosting. I realized that I had three options: Suffer through a slow admin interface, open up my wallet and upgrade, or move to Jekyll. By the name of this blog post, it&#8217;s pretty obvious what my choice was.</p>
 
-<p>I&#8217;ve never been one to just drop in a CMS, some modules and move on. I always want to understand as much of the process as possible. This probably comes from my background in audio production where one of the first things you learn to do is to follow the flow of the audio signal. If you know the exact path audio takes, it will be much easier to troubleshoot when a problem occurs. This same principal occurs in web development, where the more you know about the entire process of service a webpage to a client&#8217;s computer, the easier it is to make adustments and fix problems.</p>
-<h2>Diving Into Module Development</h2>
-<p>Recently I picked up <a href='http://www.amazon.com/Drupal-Module-Development-Matt-Butcher/dp/1849511160' target='_blank'>Drupal 7 Module Development</a>, a book written by several of the core contributors of the Drupal project. I thought that if anyone knew how to write this stuff, they must! Recently I&#8217;ve done most of my learning through video training, and my past experience diving into development books has been less than stellar, so I wanted to take a fresh approach. And I wanted to share that approach with you.</p>
+<p>For those unfamiliar with <a href='http://www.jekyllrb.com'>Jekyll</a>, it is a &#8216;blog aware&#8217; static site generator built on Ruby, powered by the <a href='http://liquidmarkup.org'>Liquid</a> markup language. This means I can write this blog article as a Markdown file and everytime I save the file Jekyll will use my layout file to create a new html page in the blog directory. It will also regenerate the homepage adding this entry to the top of the list.</p>
 
-<p>D7 Module Development starts off creating a pretty simple module that replicates a &#8216;recent blog article&#8217; block. It has a database call, does some themeing, and then spits it out into a block. It would be really easy to just read over this chapter, going &#8220;yeah, ok ok, uh huh, got it, got it&#8221;, but in reality get only the basic concepts and miss almost all of the specifics. I reminded myself that I needed to learn to write this code line by line, so if there was a single line that I didn&#8217;t understand completely, I wouldn&#8217;t be able to reproduce it.</p>
-<h2>Back To School I Go</h2>
-<p>So I starting writing every single line of the module by hand as the author went through each section.</p>
-<div class='highlight'><pre><code class='php'><span class='x'>/**</span>
-<span class='x'> * Implements hook_theme()</span>
-<span class='x'> */</span>
-<span class='x'>function single_blog_theme($existing, $type, $theme, $path) {</span>
-<span class='x'>  return array (</span>
-<span class='x'>    &#39;single_blog_block_item&#39; =&gt; array (</span>
-<span class='x'>      &#39;variables&#39; =&gt; array (</span>
-<span class='x'>        &#39;node&#39; =&gt; NULL,</span>
-<span class='x'>      ),</span>
-<span class='x'>      &#39;template&#39; =&gt; &#39;single-blog-block-item&#39;,</span>
-<span class='x'>    ),</span>
-<span class='x'>  );</span>
-<span class='x'>}</span>
-</code></pre>
-</div>
-<p>After the author finished with each draft of the module I would go back through it and write down the process, in english, step by step, as if I were describing it to another person.</p>
-<div class='highlight'><pre><code class='php'><span class='x'>single_blog_theme</span>
-<span class='x'>  defines a hook_theme called single_blog_block_item</span>
-<span class='x'>    variables passed to this theme hook is the &#39;#node&#39; =&gt; $node up in the block view</span>
-<span class='x'>    template defines an external template file, drupal tacks on the tpl.php</span>
-</code></pre>
-</div>
-<p>This was harder to do than I thought! There were parts where I wasn&#8217;t sure why a certain function was necessary, or why the array key was named what it was. Once I was done though, I felt confident that I could exlain every line of the code to a total stranger. Therefore, I not only understod the module better, I had a better understanding of how Drupal used all of these various functions to do what it was doing under the hood. It was akin to setting up and tearing down the stage week after week, where you get really intimate with the signal flow from the stage microphones to the console and then back to the monitors.</p>
+<p>Now that I have a new blog entry, and updated homepage in my local site directory, all I need to do is push those up to github and a post commit hook FTPs them over to my shared hosting account.</p>
 
-<p>Sure this approach takes longer. I&#8217;ve only gotten through a single chapter like this. But now that chapter 5 staring back at me I feel confident that I understood 100% of previous chapter. My goal is to feel that way all the way through to the end of the book.</p>
+<h2 id='what_i_learned'>What I learned</h2>
+
+<ul>
+<li>auto: true and server: true in the _config.yml file means that I can start up jekyll with a single &#8216;jekyll&#8217; command and it will host the _site directory at &#8216;localhost&#8217; and constantly look for changes</li>
+
+<li>Sass works great with Jekyll. Just rename the folder _sass so that it doesn&#8217;t get compiled by jekyll.</li>
+
+<li>Live reload is still your friend here, though it takes a few seconds for Jekyll to finish processing before the changes kick in</li>
+
+<li>Jekyll error reporting is far from perfect. I&#8217;m used to Sass errors telling me the exact file and line number of the error. I simply forgot to use a % on a closing tag, and though Jekyll told me the file name, the error message was no help and it took some time for me to see the problem.</li>
+
+<li>Templates can call other templates. So figure out your base HTML (stuff that NEVER changes), and then figure out what rarely changes (blog, homepage, inside page, store page) and create sub templates for those. Then call those subtemplates in your actual content.</li>
+
+<li>It&#8217;s really nice to be able to work/write locally and not worry about out of sync databases.</li>
+</ul>
+
+<h2 id='whats_next'>What&#8217;s Next</h2>
+
+<p>I&#8217;m still learning a ton about the whole Liquid templating engine, what it can and can&#8217;t do. I&#8217;d like to be a bit more programatic in my templates (passing variables and settings around with each post). Fortunately many people are posting their entire Jekyll site on github, so it&#8217;s easy to dive into their templates and see how they are working.</p>
+
+<p>Right now my &#8220;recent work&#8221; is just some static text in my default layout file. I&#8217;d like to create a more automated way to input that information, similar to the blog articles.</p>
+
+<p>If you have questions about Jekyll, or tips, feel free to comment. It&#8217;s always fun learning something new.</p>
       </article>
 
 

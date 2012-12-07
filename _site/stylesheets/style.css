@@ -388,11 +388,12 @@ body {
 .blog h2 {
   margin-bottom: 0em;
 }
-/* line 19, ../_sass/partials/design/body/_body.scss */
-.blog .submitted {
-  display: none;
+/* line 20, ../_sass/partials/design/body/_body.scss */
+.blog li {
+  margin-bottom: .4em;
+  font-size: .9em;
 }
-/* line 23, ../_sass/partials/design/body/_body.scss */
+/* line 25, ../_sass/partials/design/body/_body.scss */
 .blog code {
   word-wrap: break-word;
   display: block;
@@ -404,17 +405,17 @@ body {
   -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 33, ../_sass/partials/design/body/_body.scss */
+/* line 35, ../_sass/partials/design/body/_body.scss */
 .blog .readmore {
   margin-top: 1em;
   display: block;
 }
 
-/* line 41, ../_sass/partials/design/body/_body.scss */
+/* line 43, ../_sass/partials/design/body/_body.scss */
 .portfolio div {
   margin-bottom: 3em;
 }
-/* line 43, ../_sass/partials/design/body/_body.scss */
+/* line 45, ../_sass/partials/design/body/_body.scss */
 .portfolio div img {
   max-width: 90%;
   height: auto;
