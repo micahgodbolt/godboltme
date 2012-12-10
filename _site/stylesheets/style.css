@@ -422,3 +422,22 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/* line 53, ../_sass/partials/design/body/_body.scss */
+.lullabot {
+  margin-top: 1em;
+  word-wrap: break-word;
+  display: block;
+  background: #191919;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: .3em 1em;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 64, ../_sass/partials/design/body/_body.scss */
+.vimeo {
+  padding: .7em;
+}

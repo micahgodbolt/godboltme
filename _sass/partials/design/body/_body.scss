@@ -49,3 +49,19 @@
     margin: 0 auto;
   }
 }
+
+.lullabot  {
+  margin-top: 1em;
+  word-wrap: break-word;
+    display: block;
+    background: #191919;
+    background: rgba(0,0,0,.2);
+    border: 1px solid rgba(0,0,0,.6);
+    padding: .3em 1em;
+    @include box-shadow(inset 1px 1px 1px rgba(0,0,0,.1));
+}
+
+.vimeo {
+  padding: .7em;
+}
+
