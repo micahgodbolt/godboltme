@@ -1,0 +1,1009 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"page-block"
+			],
+			[
+				"inclu",
+				"include"
+			],
+			[
+				"current",
+				"currentTallest"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"no",
+				"no-drop"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"background-pos",
+				"ms-background-position-x"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"fon",
+				"fontello"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"dropdown",
+				"dropdown-class"
+			],
+			[
+				"re",
+				"respond-to"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"three",
+				"threecolcenter"
+			],
+			[
+				"thre",
+				"threecolright"
+			],
+			[
+				"each",
+				"$.each	$.each"
+			],
+			[
+				"jq",
+				"jq-boilerplate	jQuery Plugin Boilerplate"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/SASS/SASS (OSX).sublime-build",
+	"command_palette":
+	{
+		"height": 116.0,
+		"selected_items":
+		[
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"clo",
+				"Project: Close"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"sass",
+				"Set Syntax: SASS"
+			],
+			[
+				"list pack",
+				"Package Control: List Packages"
+			],
+			[
+				"lose",
+				"Project: Close"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pro",
+				"Project: Close"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				" lose",
+				"Project: Close"
+			],
+			[
+				"proj",
+				"Project: Close"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"copy pro",
+				"File: Copy Path From Project"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"gisto",
+				"Gist: Open Gist"
+			],
+			[
+				"gist",
+				"Package Control: List Packages"
+			],
+			[
+				"lint",
+				"Package Control: Install Package"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"fe",
+				"Fetch"
+			],
+			[
+				"fet",
+				"Fetch: Manage remote files"
+			],
+			[
+				"fetch ",
+				"Fetch"
+			],
+			[
+				"fetch",
+				"Fetch"
+			],
+			[
+				"stynth",
+				"Set Syntax: HTML"
+			],
+			[
+				"packli",
+				"Package Control: List Packages"
+			],
+			[
+				"jqea",
+				"Snippet: jQuery.each"
+			],
+			[
+				"synt jq",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"jqcli	",
+				"Snippet: jQuery click handler"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"snip echoeach",
+				"Snippet: <?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"create",
+				"Create Xiki Buffer"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/micahgodbolt/Sites/iqmock/scss/styleguide/_styleguide.scss",
+		"/Users/micahgodbolt/Sites/iqmock/checking.html",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_pageblocks.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_blocks.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_widgets.scss",
+		"/Users/micahgodbolt/Sites/iqmock/.gitignore",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/_extends.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_blocks.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/screen.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/_base.scss",
+		"/Users/micahgodbolt/Sites/fm-vagrant/Vagrantfile",
+		"/Users/micahgodbolt/Sites/fm-vagrant/config.rb",
+		"/Users/micahgodbolt/Sites/fm-vagrant/manifests/nodes.pp",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_design.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_layout.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_footer.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_main.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/_variables.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_nav.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_buttons.scss",
+		"/Users/micahgodbolt/Sites/iqmock/personal.html",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/hero/_hero.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/mixins/_respond-to.scss",
+		"/Users/micahgodbolt/Sites/iqmock/config.rb",
+		"/Users/micahgodbolt/Sites/iqmock/index.html",
+		"/Users/micahgodbolt/Sites/iqmock/img/sprites-sf41a7ab979.png",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/templates/system/page.tpl.php",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/templates/system/html.tpl.php",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_oldblocks.scss",
+		"/Users/micahgodbolt/Sites/iqmock/js/scripts.js",
+		"/private/var/folders/2x/nv9_rl5x6j75hy1841bs3sy00000gn/T/71880ecd-7c54-444f-a9e7-0316c4baddf3/home/micahgodbolt/godbolt.me/test/css/screen.css",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/hero/_flexslider.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_header.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/mixins/_dropdown.scss",
+		"/Users/micahgodbolt/Sites/iqmock/Drupal.sublime-projectcompletions",
+		"/Users/micahgodbolt/Sites/tincr.json",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_test.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/blocks.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_test.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/test.scss",
+		"/Users/micahgodbolt/Sites/iqmock/index3.html",
+		"/Users/micahgodbolt/Sites/iqmock/index2.html",
+		"/Users/micahgodbolt/Sites/iqmock/tincr.json",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_hero.scss",
+		"/Users/micahgodbolt/Sites/iqmock/js/plugins/flexslider/flexslider.css",
+		"/Users/micahgodbolt/Sites/iqmock/js/plugins/flexslider/jquery.flexslider-min.js",
+		"/Users/micahgodbolt/Sites/iqmock/js/plugins.js",
+		"/Users/micahgodbolt/Desktop/woothemes-FlexSlider-8133de7/README.mdown",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_mobiledropdown.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_desktopdropdown.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_desktopmenu.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/_sprites.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/utility/_normalize.scss",
+		"/Users/micahgodbolt/Sites/iqmock/css/screen.css",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_search.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_login.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_locations.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_partials.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_mobilemenu.scss",
+		"/Users/micahgodbolt/Sites/iqmock/iqmock.sublime-workspace",
+		"/Users/micahgodbolt/Sites/iqmock/fonts/fontello/css/fontello-codes.css",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/extends/_headeritem.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/_mixins.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/mixins/_dropdownmenu.scss",
+		"/Users/micahgodbolt/Desktop/1162_Code/1162_02_Code/02/first/README.md",
+		"/Users/micahgodbolt/Sites/iqmock/scss/global/_normalize.scss",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_normalize.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/design/_base.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_header.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_main.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_layout.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_partials.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_search.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_login.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_locations.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_base.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_articles.scss",
+		"/Users/micahgodbolt/Sites/iqmock/js/geo.js",
+		"/Users/micahgodbolt/Sites/iqmock/iqmock.sublime-project",
+		"/Users/micahgodbolt/Sites/iqmock/text.html",
+		"/Users/micahgodbolt/Sites/iqmock/scss/_nav.scss",
+		"/Users/micahgodbolt/Sites/iqmock/scss/partials/_header.scss",
+		"/Users/micahgodbolt/Sites/iqmock/fonts/fontello/css/fontello.css",
+		"/Users/micahgodbolt/Sites/iqmock/sass/screen.sass",
+		"/Users/micahgodbolt/Sites/iqmock/sass/_nav.sass",
+		"/Users/micahgodbolt/Sites/iqmock/sass/_layout.sass",
+		"/Users/micahgodbolt/Sites/iqmock/_nav.sass",
+		"/Users/micahgodbolt/Sites/iqmock/_layout.sass",
+		"/Users/micahgodbolt/Sites/iqmock/sass/_base.sass",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/layout/layout-views/layout-portfolio.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/design/header/_header.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/styleguide/_style-guide.scss",
+		"/Applications/MAMP/bin/php/php5.4.4/conf/php.ini",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/design/header/_html.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/template.php",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/layout/layout-views/layouts-portfolio.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/layout/layout-page/_layout-header.scss",
+		"/Users/micahgodbolt/Desktop/Julie/DSC_0120.jpg",
+		"/Users/micahgodbolt/Desktop/Julie/DSC_0018.jpg",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/layout/layout-page/_layout-page.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/templates/node/node.tpl.php",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/templates/panels/threecol_25_50_25/panels-threecol-25-50-25.tpl.php",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/global/_variables.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/layout/_layout.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/templates/panels/twocol_stacked/panels-twocol-stacked.tpl.php",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/layout/page/_page.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/layout/page/_header.scss",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/modules/panels/plugins/layouts/threecol_25_50_25/panels-threecol-25-50-25.tpl.php",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/templates/panels/threecol_25_50_25/threecol_25_50_25.inc",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/partials/design/_design.scss",
+		"/Users/micahgodbolt/Sites/godboltme/godboltme.sublime-project",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/godboltme.sublime-project",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/script.js",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/style.css",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/Gist/Gist.sublime-settings",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/test.js",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/README.md",
+		"/Users/micahgodbolt/Sites/godboltme/sites/all/themes/godbolt/sass/newfile.txt",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/User/jquery.js",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/jQuery/README.md",
+		"/Users/micahgodbolt/Desktop/untitled.php",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/User/JavaScript/siaf.sublime-snippet",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/micahgodbolt/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"50",
+			"0",
+			"Explore",
+			"buttons",
+			"homeblock",
+			"homeblock{",
+			"footer",
+			"button1",
+			"desktopmenu",
+			"2",
+			"large",
+			"get start",
+			"placekitten",
+			"6",
+			"include container",
+			"span-columns",
+			"column-span",
+			"grid-span",
+			"susy",
+			"iqmock",
+			"fontello",
+			"255",
+			"Learn More",
+			"flexslider",
+			"h4",
+			"article",
+			"homeblock",
+			"article",
+			"button",
+			"after",
+			"LoginName",
+			"active-",
+			"-login",
+			".active-login",
+			"active-login",
+			"design",
+			"projectname",
+			"  ",
+			"equal",
+			"iconbox ",
+			"iconbox",
+			"h1",
+			"p",
+			"rigth",
+			"button",
+			"0",
+			"255",
+			"0",
+			"255",
+			"0",
+			"333",
+			"0",
+			"255",
+			"0",
+			"255",
+			"$red",
+			"255",
+			"lighten",
+			"darken",
+			"wrapper",
+			"medium",
+			"imageleft ",
+			"imageleft",
+			"overlay_background",
+			"\">",
+			"h3",
+			"imageleft-inside",
+			"imageleft",
+			"overlay_background",
+			"imageleft",
+			"overlay ",
+			"overlay",
+			"article",
+			"background",
+			"u",
+			"first",
+			"overlay",
+			"p",
+			"iconbox",
+			"box2",
+			"box1",
+			"<code>\n<pre>",
+			"iqmock",
+			"img",
+			"hero",
+			"large",
+			"footer",
+			"hero",
+			"grid",
+			"Lorem",
+			"Join Today",
+			"after",
+			"p",
+			"P",
+			"p",
+			"left",
+			"article",
+			"mixin respond",
+			"respond-to",
+			"color: inherit",
+			"width",
+			"certifications",
+			"visa",
+			"blocks",
+			"body",
+			"0",
+			"40",
+			"placedog",
+			".main",
+			"input",
+			"0",
+			"mobilemenu",
+			"mobiledropdown",
+			"mobilemenu",
+			"menu",
+			"text-decoration",
+			"list",
+			"design",
+			"blocks",
+			"design",
+			"h3",
+			"media",
+			"href",
+			"a",
+			"Services",
+			"Loans",
+			"Savings",
+			".location, .login, .mainnav"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<pre>\n<code>",
+			"mobiledropdown"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"chec",
+				"checking.html"
+			],
+			[
+				"style",
+				"scss/styleguide/_styleguide.scss"
+			],
+			[
+				"",
+				"scss/global/extends/_blocks.scss"
+			],
+			[
+				"blo",
+				"scss/design/_blocks.scss"
+			],
+			[
+				"block",
+				"scss/design/_blocks.scss"
+			],
+			[
+				"wd",
+				"scss/design/_widgets.scss"
+			],
+			[
+				"var",
+				"scss/global/_variables.scss"
+			],
+			[
+				"chc",
+				"checking.html"
+			],
+			[
+				"layou",
+				"scss/design/_layout.scss"
+			],
+			[
+				"footer",
+				"scss/design/_footer.scss"
+			],
+			[
+				"res",
+				"scss/global/mixins/_respond-to.scss"
+			],
+			[
+				"hero",
+				"scss/design/hero/_hero.scss"
+			],
+			[
+				"lay",
+				"scss/design/_layout.scss"
+			],
+			[
+				"bloc",
+				"scss/design/_blocks.scss"
+			],
+			[
+				"re",
+				"scss/global/mixins/_respond-to.scss"
+			],
+			[
+				"per",
+				"personal.html"
+			],
+			[
+				"base",
+				"scss/global/_base.scss"
+			],
+			[
+				"b",
+				"scss/design/_blocks.scss"
+			],
+			[
+				"main",
+				"scss/design/_main.scss"
+			],
+			[
+				"old",
+				"scss/design/_oldblocks.scss"
+			],
+			[
+				"conf",
+				"config.rb"
+			],
+			[
+				"config",
+				"config.rb"
+			],
+			[
+				"foo",
+				"scss/design/_footer.scss"
+			],
+			[
+				"nav",
+				"scss/design/_nav.scss"
+			],
+			[
+				"flex",
+				"scss/design/hero/_flexslider.scss"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"scri",
+				"js/scripts.js"
+			],
+			[
+				"dropd",
+				"scss/global/mixins/_dropdown.scss"
+			],
+			[
+				"hea",
+				"scss/design/_header.scss"
+			],
+			[
+				"dru",
+				"Drupal.sublime-projectcompletions"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"scre",
+				"scss/screen.scss"
+			],
+			[
+				"scree",
+				"scss/screen.scss"
+			],
+			[
+				"index3",
+				"index3.html"
+			],
+			[
+				"styl",
+				"scss/styleguide/_styleguide.scss"
+			],
+			[
+				"head",
+				"scss/design/_header.scss"
+			],
+			[
+				"index2",
+				"index2.html"
+			],
+			[
+				"scr",
+				"js/scripts.js"
+			],
+			[
+				"close",
+				"Plate Fleet strike colors nipper league warp to go"
+			],
+			[
+				"fle",
+				"scss/design/hero/_flexslider.scss"
+			],
+			[
+				"slider",
+				"scss/design/hero/_flexslider.scss"
+			],
+			[
+				"resp",
+				"scss/global/mixins/_respond-to.scss"
+			],
+			[
+				"nor",
+				"scss/global/utility/_normalize.scss"
+			],
+			[
+				"foot",
+				"scss/design/_footer.scss"
+			],
+			[
+				"fo",
+				"scss/design/_footer.scss"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"blocks",
+				"scss/design/_blocks.scss"
+			],
+			[
+				"rb",
+				"config.rb"
+			],
+			[
+				"mob",
+				"scss/global/extends/_mobiledropdown.scss"
+			],
+			[
+				"mobile",
+				"scss/global/extends/_mobiledropdown.scss"
+			],
+			[
+				"sear",
+				"scss/design/_search.scss"
+			],
+			[
+				"desk",
+				"scss/global/extends/_desktopdropdown.scss"
+			],
+			[
+				"drop",
+				"scss/global/mixins/_dropdown.scss"
+			],
+			[
+				"bo",
+				"scss/design/_blocks.scss"
+			],
+			[
+				"par",
+				"scss/design/_partials.scss"
+			],
+			[
+				"part",
+				"scss/design/_partials.scss"
+			],
+			[
+				"loc",
+				"scss/design/_locations.scss"
+			],
+			[
+				"menu",
+				"scss/global/extends/_desktopmenu.scss"
+			],
+			[
+				"des",
+				"scss/global/extends/_desktopmenu.scss"
+			],
+			[
+				"ay",
+				"scss/design/_layout.scss"
+			],
+			[
+				"mai",
+				"scss/design/_main.scss"
+			],
+			[
+				"bas",
+				"scss/global/_base.scss"
+			],
+			[
+				"dro",
+				"scss/global/mixins/_dropdown.scss"
+			],
+			[
+				"deskt",
+				"scss/global/extends/_desktopmenu.scss"
+			],
+			[
+				"na",
+				"scss/design/_nav.scss"
+			],
+			[
+				"dr",
+				"scss/global/mixins/_dropdown.scss"
+			],
+			[
+				"deskto",
+				"scss/global/extends/_desktopmenu.scss"
+			],
+			[
+				"sea",
+				"scss/design/_search.scss"
+			],
+			[
+				"log",
+				"scss/design/_login.scss"
+			],
+			[
+				"loca",
+				"scss/design/_locations.scss"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"scss",
+				"scss/design/_partials.scss"
+			],
+			[
+				"ba",
+				"scss/global/_base.scss"
+			],
+			[
+				"sc",
+				"scss/screen.scss"
+			],
+			[
+				"cree",
+				"scss/screen.scss"
+			],
+			[
+				"art",
+				"scss/_articles.scss"
+			],
+			[
+				"font",
+				"fonts/fontello/css/fontello.css"
+			],
+			[
+				"sas",
+				"sass/_base.sass"
+			],
+			[
+				"sass",
+				"sass/screen.sass"
+			],
+			[
+				"header",
+				"godbolt/sass/partials/design/header/_header.scss"
+			],
+			[
+				"html",
+				"godbolt/sass/partials/design/header/_html.scss"
+			],
+			[
+				"php",
+				"godbolt/template.php"
+			],
+			[
+				"layout",
+				"godbolt/sass/partials/layout/layout-views/layouts-portfolio.scss"
+			],
+			[
+				"page",
+				"godbolt/templates/system/page.tpl.php"
+			],
+			[
+				"layoutpa",
+				"godbolt/sass/partials/layout/layout-page/_layout-page.scss"
+			],
+			[
+				"three",
+				"threecol_25_50_25/panels-threecol-25-50-25.tpl.php"
+			],
+			[
+				"twoco",
+				"godbolt/templates/panels/twocol_stacked/panels-twocol-stacked.tpl.php"
+			],
+			[
+				"pagecss",
+				"godbolt/sass/partials/layout/page/_page.scss"
+			],
+			[
+				"node",
+				"godbolt/templates/node/node.tpl.php"
+			],
+			[
+				"project",
+				"sites/all/themes/godbolt/godboltme.sublime-project"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"close",
+				"/Users/micahgodbolt/Sites/godboltme/godboltme.sublime-project"
+			],
+			[
+				"",
+				"/Users/micahgodbolt/Sites/godboltjek/godboltjek.sublime-project"
+			],
+			[
+				"temp",
+				"/Users/micahgodbolt/Sites/iqtemp/iqtemp.sublime-project"
+			],
+			[
+				"mocl",
+				"/Users/micahgodbolt/Sites/iqmock/iqmock.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true
+}

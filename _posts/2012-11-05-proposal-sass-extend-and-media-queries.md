@@ -49,7 +49,7 @@ So here is a class of "mybox". If I want to apply these styles to a div on my pa
 As you can see, this works great. No duplication of CSS properties, and you can continue to extend this box as often as you need to.
 
 <h2>The Problem</h2>
-But what about media queries? What happens when you need to extend a class, but only at a particular media query (Note that I am using my respond-to mixin that I <a href="/blog/sass-abstraction-and-media-queries">wrote about yesterday</a>)?
+But what about media queries? What happens when you need to extend a class, but only at a particular media query (Note that I am using my respond-to mixin that I <a href="/blog/sass-abstraction-and-media-queries.html">wrote about yesterday</a>)?
 
 {% highlight scss %}
 
