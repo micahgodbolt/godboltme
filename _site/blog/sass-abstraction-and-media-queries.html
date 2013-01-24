@@ -76,8 +76,7 @@
     <span class='k'>@media</span> <span class='nt'>screen</span> <span class='nt'>and</span> <span class='o'>(</span><span class='nt'>min-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-medium</span> <span class='o'>+</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
   <span class='p'>}</span>
 <span class='p'>}</span>
-</code></pre>
-</div></p>
+</code></pre></div></p>
 
 <p>So then I create my media queries like this:</p>
 <div class='highlight'><pre><code class='css'><span class='nc'>.sidebar</span> <span class='p'>{</span>
@@ -89,8 +88,7 @@
     <span class='nt'>float</span><span class='o'>:</span> <span class='nt'>left</span><span class='o'>;</span>
   <span class='p'>}</span>
 <span class='err'>}</span>
-</code></pre>
-</div>
+</code></pre></div>
 <p>As you can see, right now I am including &#8220;screen&#8221; in my media query declaration. But if a year omitting &#8220;screen&#8221; is the awesome sauce, and it&#8217;s fixing everythign from the iTV to world hunger&#8230; Well easy to fix:</p>
 
 <p><div class='highlight'><pre><code class='scss'><span class='k'>@mixin</span><span class='nf'> respond-to</span><span class='p'>(</span><span class='nv'>$media</span><span class='p'>)</span> <span class='p'>{</span>
@@ -104,8 +102,7 @@
     <span class='k'>@media</span> <span class='o'>(</span><span class='nt'>min-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-medium</span> <span class='o'>+</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
   <span class='p'>}</span>
 <span class='p'>}</span>
-</code></pre>
-</div></p>
+</code></pre></div></p>
 
 <p>And after 2 seconds of Sass compilation, all of my media queries are updated.</p>
 

@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-   <title>  I will not repeat myself, I will not repeat myself |  Micah Godbolt </title>
+   <title>  Getting Around Some Limitations of Compass Sprites |  Micah Godbolt </title>
 
   <meta name="description" content="">
 
@@ -54,38 +54,24 @@
 
           <div class="threecolcenter">
     <article class="blog">
-      <h2>I will not repeat myself, I will not repeat myself</h2>
-      <p>As I&#8217;ve mentioned before, I am going through the &#8220;Drupal 7 Module Development&#8221; book, trying to learn as much as I possibly can as I go from chapter to chapter. I still stand by my suggestion of <a href='/blog/teacher-said-show-my-work.html'>explaining your code in plain english</a>. That one technique has really served me well as I try to trace the flow of Drupal&#8217;s rendering process. Sure, it makes getting through a chapter take longer, but I always find the process worth while. Another thing I do that slows down my progress is typing out, by hand, every single line of code from the module examples.</p>
-<h2>Can't I just copy and paste?</h2>
-<p>Sure, I&#8217;ve downloaded the example files from the publisher&#8217;s website. I could easily read the chapter, copy/paste the files into my Drupal install, and view the results. Wouldn&#8217;t this be good enough? I could still go through and &#8216;show my work&#8217;, describing what is happening at each step. What could I possibly gain from typing array after array after blessed array? Well, after typing several dozen associative arrays, it was pretty obvious to me how I could improve my module development process.</p>
+      <h2>Getting Around Some Limitations of Compass Sprites</h2>
+      <h3 id='the_problem'>The Problem</h3>
 
-<p>Here is a quick snippit from inside a schema array.</p>
-<div class='highlight'><pre><code class='php'><span class='x'>&#39;title&#39; =&gt; array(</span>
-<span class='x'>        &#39;description&#39; =&gt; &#39;The title of this artwork.&#39;,</span>
-<span class='x'>        &#39;type&#39; =&gt; &#39;varchar&#39;,</span>
-<span class='x'>        &#39;length&#39; =&gt; 255,</span>
-<span class='x'>        &#39;not null&#39; =&gt; TRUE,</span>
-<span class='x'>        &#39;default&#39; =&gt; &#39;&#39;,</span>
-<span class='x'>        ),</span>
-<span class='x'>      &#39;changed&#39; =&gt; array(</span>
-<span class='x'>        &#39;description&#39; =&gt; &#39;The Unix timestamp when the artwork was created.&#39;,</span>
-<span class='x'>        &#39;type&#39; =&gt; &#39;int&#39;,</span>
-<span class='x'>        &#39;not null&#39; =&gt; TRUE,</span>
-<span class='x'>        &#39;dafault&#39; =&gt; 0,</span>
-<span class='x'>        ),</span>
-</code></pre></div>
-<p>I don&#8217;t know about you, but after moving my eyes from the book to the keyboard to type my 11th &#8216;=&gt;&#8217; I was determined to improve my typing speed. It didn&#8217;t require much. I noticed there is a very obvious pattern here with the array key and value, and decided I&#8217;d had enough.</p>
-<h2>There's a snippit for that</h2>
-<p>So the tl:dr of it all is that by forcing myself to write out every single line of this example code, I found the repetitive pieces of code that I could turn into a snippit in Sublime Text.</p>
-<div class='highlight'><pre><code class='html'><span class='nt'>&lt;snippet&gt;</span>
-  <span class='nt'>&lt;content&gt;</span>
-&#39;${1:attribute}&#39; =&gt;
-<span class='nt'>&lt;/content&gt;</span>
-   <span class='nt'>&lt;tabTrigger&gt;</span>key<span class='nt'>&lt;/tabTrigger&gt;</span>
-<span class='nt'>&lt;scope&gt;</span>source.php<span class='nt'>&lt;/scope&gt;</span>
-<span class='nt'>&lt;/snippet&gt;</span>
-</code></pre></div>
-<p>And now that I have this snippit in place I&#8217;ll keep typing every line, improving the speed and accuracy in which I can type out all of these associative arrays. I&#8217;ll keep looking for other common patterns that trip me up and keep working those into my coding regimen.</p>
+<p>I have been diving headlong into Compass Sprites for a large response redesign. The site has a ton of sprite images, so it seemed to be a perfect opportunity to learn as much as I could about spriteing. One of the problems I ran into was that Compass used @extend to add selectors to the background-image property. This obviously causes problems in media queries.</p>
+
+<h3 id='the_solution'>The Solution</h3>
+
+<p>The solution is obviously to put the main sprite mixins outside of any media query and then use the more specific mixins inside media queries when needed.</p>
+
+<h3 id='mo_problems'>Mo&#8217; Problems</h3>
+
+<p>The next problem was that one certain sprite wasn&#8217;t supposed to show up until a desktop media query (it was to be hidden in a mobile context of this mobile first site). I couldn&#8217;t call the main mixin and then hide it with background: none; I&#8217;d just have to rebuild the background again to override the background: none.</p>
+
+<h3 id='mo_solutions'>Mo&#8217; Solutions</h3>
+
+<p>The solution I landed on was adjusting the background-size instead. So after calling the main mixin I just added a background-size: 0%, effectively hiding the entire sprite-sheet for those elements. Later on, inside my media query I just had to add a background-size: inherited, and the backgrounds were right where I left them.</p>
+
+<p>I&#8217;m sure there are some other solutions out there, and if you know of a better one, I&#8217;d love to hear it! But this is something that worked for me, so I wanted to pass it along.</p>
       </article>
 
 

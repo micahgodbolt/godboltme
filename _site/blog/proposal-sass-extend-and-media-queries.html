@@ -65,8 +65,7 @@
   <span class='na'>height</span><span class='o'>:</span> <span class='mi'>10</span><span class='kt'>em</span><span class='p'>;</span>
   <span class='na'>background</span><span class='o'>:</span> <span class='nb'>blue</span><span class='p'>;</span>
 <span class='p'>}</span>
-</code></pre>
-</div>
+</code></pre></div>
 <p>So here is a class of &#8220;mybox&#8221;. If I want to apply these styles to a div on my page I don&#8217;t have duplicate these properties (which is what @include would do). If I use @extend I get the following:</p>
 <div class='highlight'><pre><code class='scss'><span class='cm'>/*******   Sass   *********/</span>
 
@@ -87,8 +86,7 @@
   <span class='na'>height</span><span class='o'>:</span> <span class='mi'>10</span><span class='kt'>em</span><span class='p'>;</span>
   <span class='na'>background</span><span class='o'>:</span> <span class='nb'>blue</span><span class='p'>;</span>
 <span class='p'>}</span>
-</code></pre>
-</div>
+</code></pre></div>
 <p>As you can see, this works great. No duplication of CSS properties, and you can continue to extend this box as often as you need to.</p>
 <h2>The Problem</h2>
 <p>But what about media queries? What happens when you need to extend a class, but only at a particular media query (Note that I am using my respond-to mixin that I <a href='/blog/sass-abstraction-and-media-queries.html'>wrote about yesterday</a>)?</p>
@@ -124,8 +122,7 @@
   <span class='na'>width</span><span class='o'>:</span> <span class='mi'>20</span><span class='kt'>em</span><span class='p'>;</span>
   <span class='na'>height</span><span class='o'>:</span> <span class='mi'>20</span><span class='kt'>em</span><span class='p'>;</span>
 <span class='p'>}</span>
-</code></pre>
-</div>
+</code></pre></div>
 <p>Sass can&#8217;t wrap the entire .mybigbox with a media query, because it might be extended elsewhere, and there is no way to associate a media query with just a single selector like this. So what can you do about this? Well I have 3 possible solutions.</p>
 <h2>Working around the problem</h2>
 <p>If you have @extends that follow really consistent patterns you could always include your media queries inside of the extend. This way, your Sass would look like this:</p>
@@ -138,8 +135,7 @@
     <span class='na'>height</span><span class='o'>:</span> <span class='mi'>20</span><span class='kt'>em</span><span class='p'>;</span>
   <span class='p'>}</span>
 <span class='p'>}</span>
-</code></pre>
-</div>
+</code></pre></div>
 <p>This will work and produce the css you want, but you lose the ability to @extend the smaller box without the media query. So sure, this might solve the problem in some cases, but as your CSS gets more abstract you&#8217;ll find yourself not able to @extend code because you don&#8217;t want the media queries tied to it.</p>
 <h2>A Javascript Hack</h2>
 <p>As with any problem, one of the solutions is always &#8220;we can just fix it with javascript!&#8221;. I don&#8217;t think I&#8217;d use this solution, but it&#8217;s at least interesting to think about.</p>
@@ -178,8 +174,7 @@
   <span class='na'>width</span><span class='o'>:</span> <span class='mi'>20</span><span class='kt'>em</span><span class='p'>;</span>
   <span class='na'>height</span><span class='o'>:</span> <span class='mi'>20</span><span class='kt'>em</span><span class='p'>;</span>
 <span class='p'>}</span>
-</code></pre>
-</div>
+</code></pre></div>
 <p>So if the window is 600px wide or more, javascript will tack on a .large_mediaquery class to my HTML tag, and my callout box will be 20em instead of 10em.</p>
 
 <p>There are many obvious problems with this solution from a semantic, future-proofing, standard complying standpoint. But the point is&#8230;it&#8217;d work!</p>
@@ -220,8 +215,7 @@
   <span class='na'>width</span><span class='o'>:</span> <span class='mi'>20</span><span class='kt'>em</span><span class='p'>;</span>
   <span class='p'>}</span>
 <span class='p'>}</span>
-</code></pre>
-</div>
+</code></pre></div>
 <p>Sure, this will a create seperate instances for each media query the @extend is used in, but this is how media queries are handled in the browser. And assuming you are using a small set of standard media queries values, they should group together nicely and cause limited code bloat.</p>
 
 <p>I know I wrote a lot here, and I am sure I made a few mistakes along the way. Feel free to point out anything I missed, and I will try to update it.</p>
