@@ -11,7 +11,7 @@ It all started as I was mulling over a tweet from @patrickfulton about how probl
 
 It took a little bit to settle in. Sass 3.2 has only been out a short time, and it was this release that made @extend a viable tool for creating the objects we use in our OOCSS. As I'm just now wrapping up the mobile design of my mobile first layout, it struck me that I had no idea how to deal with this same problem! Hence no sleep!
 
-@extend is an amazing tool because it allows you to 'extend' the list of selectors for a selector, property set, but it has a limitation. Let me illustrate the issue.
+extend is an amazing tool because it allows you to 'extend' the list of selectors for a selector, property set, but it has a limitation. Let me illustrate the issue.
 
 {% highlight scss %}
 .mybox {
@@ -48,7 +48,7 @@ So here is a class of "mybox". If I want to apply these styles to a div on my pa
 
 As you can see, this works great. No duplication of CSS properties, and you can continue to extend this box as often as you need to.
 
-<h2>The Problem</h2>
+##The Problem
 But what about media queries? What happens when you need to extend a class, but only at a particular media query (Note that I am using my respond-to mixin that I <a href="/blog/sass-abstraction-and-media-queries.html">wrote about yesterday</a>)?
 
 {% highlight scss %}
@@ -90,7 +90,7 @@ But what about media queries? What happens when you need to extend a class, but 
 
 Sass can't wrap the entire .mybigbox with a media query, because it might be extended elsewhere, and there is no way to associate a media query with just a single selector like this. So what can you do about this? Well I have 3 possible solutions.
 
-<h2>Working around the problem</h2>
+##Working around the problem
 
 If you have @extends that follow really consistent patterns you could always include your media queries inside of the extend. This way, your Sass would look like this:
 
@@ -109,7 +109,7 @@ If you have @extends that follow really consistent patterns you could always inc
 
 This will work and produce the css you want, but you lose the ability to @extend the smaller box without the media query. So sure, this might solve the problem in some cases, but as your CSS gets more abstract you'll find yourself not able to @extend code because you don't want the media queries tied to it.
 
-<h2>A Javascript Hack</h2>
+##A Javascript Hack
 
 As with any problem, one of the solutions is always "we can just fix it with javascript!". I don't think I'd use this solution, but it's at least interesting to think about.
 
@@ -156,9 +156,9 @@ So if the window is 600px wide or more, javascript will tack on a .large_mediaqu
 
 There are many obvious problems with this solution from a semantic, future-proofing, standard complying standpoint. But the point is...it'd work!
 
-<h2>The Sass Way</h2>
+##The Sass Way
 
-<b>TL;DR:</b> After tossing and turning on this issue for a bit I realized that there wasn't a perfect solution using the tools we have today. But I finally got some sleep once I figured out how I would propose to solve this problem, "The Sass Way &trade;".
+TL;DR: After tossing and turning on this issue for a bit I realized that there wasn't a perfect solution using the tools we have today. But I finally got some sleep once I figured out how I would propose to solve this problem, "The Sass Way &trade;".
 
 Right now if you write a silent class (using the % like I did above), the class doesn't get written to your style sheet until you @extend it, determining it's place in the cascade as well. So what if Sass treats an @extend inside a media query as just another instance of that class. See the following:
 

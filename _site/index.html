@@ -55,6 +55,18 @@
       <div class="threecolcenter">
   
   <article class="blog">
+    <a href="/blog/response-to-element-query.html">
+      <h2>A Response To "Working around a lack of element queries"</h2>
+    </a>
+    <div>
+      
+    Today Fillament Group posted about the age old question of being able to do queries of an objects container size, and adjusting the style based on that size. I crafted a response that I thought was worth sharing here.
+    
+   </div>
+    <a class="readmore" href="/blog/response-to-element-query.html">Read More</a>
+  </article>
+  
+  <article class="blog">
     <a href="/blog/getting-around-compass-sprite-limitations.html">
       <h2>Getting Around Some Limitations of Compass Sprites</h2>
     </a>
@@ -139,15 +151,66 @@
   </article>
   
   <article class="blog">
-    <a href="/blog/sass-abstraction-and-media-queries.html">
-      <h2>Sass Abstraction and Media Queries</h2>
+    <a href="/sass-abstraction-and-media-queries.html">
+      <h2>Sass Abstraction And Media Queries</h2>
     </a>
     <div>
       
-    @Brad_Frost pointed out a blog entry today by Bearded called The Thing About Those Media Types. The TL:DR of it is that some people use "screen" in their media queries, while others do not. Right now this is not a huge deal because almost all devices that are capable of displaying websites identify themselves as "screen" media type, even if they are a TV or a projector.
+    <p><a href='https://twitter.com/brad_frost'>@Brad_Frost</a> pointed out a blog entry today by Bearded called <a href='http://blog.bearded.com/post/33656467094/the-thing-about-those-media-types'>The Thing About Those Media Types</a>. The TL:DR of it is that some people use &#8220;screen&#8221; in their media queries, while others do not. Right now this is not a huge deal because almost all devices that are capable of displaying websites identify themselves as &#8220;screen&#8221; media type, even if they are a TV or a projector.</p>
+
+<p>While I think this artcile brings up a good point, that we need to be &#8216;future-friendly&#8217; and consider how these choices might affect devices yet to come, I think my main takeaway was quite different.</p>
+
+<p>The big fear here is that after we build our masterpiece, with its massive database, and tens of thousands of lines of CSS, we come to find out that ommiting/including the &#8220;screen&#8221; media type is breaking our site on device X, Y and Z. Sure we might be able to solve this with a massive &#8220;find and replace&#8221;, but this solution is pretty hackish and error prone.</p>
+
+<p>The solution to this problem is to use a layer of abstraction in your media queries, and my favorite tool for that is Sass.</p>
+
+<p>This is the mixin that I am currently using for the iQ website to handle my media queries:</p>
+
+<p><div class='highlight'><pre><code class='scss'><span class='k'>@mixin</span><span class='nf'> respond-to</span><span class='p'>(</span><span class='nv'>$media</span><span class='p'>)</span> <span class='p'>{</span>
+  <span class='k'>@if</span> <span class='nv'>$media</span> <span class='o'>==</span> <span class='n'>small</span> <span class='p'>{</span>
+    <span class='k'>@media</span> <span class='nt'>screen</span> <span class='nt'>and</span> <span class='o'>(</span><span class='nt'>max-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-small</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
+  <span class='p'>}</span>
+   <span class='k'>@else</span> <span class='nt'>if</span> <span class='err'>$</span><span class='nt'>media</span> <span class='o'>==</span> <span class='nt'>medium</span> <span class='p'>{</span>
+    <span class='k'>@media</span> <span class='nt'>screen</span> <span class='nt'>and</span> <span class='o'>(</span><span class='nt'>min-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-small</span> <span class='o'>+</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
+  <span class='p'>}</span>
+  <span class='k'>@else</span> <span class='nt'>if</span> <span class='err'>$</span><span class='nt'>media</span> <span class='o'>==</span> <span class='nt'>large</span> <span class='p'>{</span>
+    <span class='k'>@media</span> <span class='nt'>screen</span> <span class='nt'>and</span> <span class='o'>(</span><span class='nt'>min-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-medium</span> <span class='o'>+</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre></div></p>
+
+<p>So then I create my media queries like this:</p>
+<div class='highlight'><pre><code class='css'><span class='nc'>.sidebar</span> <span class='p'>{</span>
+  <span class='o'>@</span><span class='n'>include</span> <span class='n'>respond</span><span class='o'>-</span><span class='n'>to</span><span class='p'>(</span><span class='s1'>&#39;small&#39;</span><span class='p'>)</span> <span class='err'>{</span>
+    <span class='k'>width</span><span class='o'>:</span> <span class='m'>100</span><span class='o'>%</span><span class='p'>;</span>
+  <span class='p'>}</span>
+  <span class='k'>@include</span> <span class='nt'>respond-to</span><span class='o'>(</span><span class='s1'>&#39;large&#39;</span><span class='o'>)</span> <span class='p'>{</span>
+    <span class='nt'>width</span><span class='o'>:</span> <span class='nt'>40</span><span class='o'>%;</span>
+    <span class='nt'>float</span><span class='o'>:</span> <span class='nt'>left</span><span class='o'>;</span>
+  <span class='p'>}</span>
+<span class='err'>}</span>
+</code></pre></div>
+<p>As you can see, right now I am including &#8220;screen&#8221; in my media query declaration. But if a year omitting &#8220;screen&#8221; is the awesome sauce, and it&#8217;s fixing everythign from the iTV to world hunger&#8230; Well easy to fix:</p>
+
+<p><div class='highlight'><pre><code class='scss'><span class='k'>@mixin</span><span class='nf'> respond-to</span><span class='p'>(</span><span class='nv'>$media</span><span class='p'>)</span> <span class='p'>{</span>
+  <span class='k'>@if</span> <span class='nv'>$media</span> <span class='o'>==</span> <span class='n'>small</span> <span class='p'>{</span>
+    <span class='k'>@media</span> <span class='o'>(</span><span class='nt'>max-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-small</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
+  <span class='p'>}</span>
+   <span class='k'>@else</span> <span class='nt'>if</span> <span class='err'>$</span><span class='nt'>media</span> <span class='o'>==</span> <span class='nt'>medium</span> <span class='p'>{</span>
+    <span class='k'>@media</span> <span class='o'>(</span><span class='nt'>min-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-small</span> <span class='o'>+</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
+  <span class='p'>}</span>
+  <span class='k'>@else</span> <span class='nt'>if</span> <span class='err'>$</span><span class='nt'>media</span> <span class='o'>==</span> <span class='nt'>large</span> <span class='p'>{</span>
+    <span class='k'>@media</span> <span class='o'>(</span><span class='nt'>min-width</span><span class='nd'>:</span> <span class='err'>$</span><span class='nt'>break-medium</span> <span class='o'>+</span> <span class='nt'>1</span><span class='o'>)</span> <span class='p'>{</span> <span class='k'>@content</span><span class='o'>;</span> <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre></div></p>
+
+<p>And after 2 seconds of Sass compilation, all of my media queries are updated.</p>
+
+<p>We might not know what the future is going to require of our stylesheets, but through the abstraction of these functions we can future proof our CSS so that it&#8217;ll be easy to update when those changes come.</p>
     
    </div>
-    <a class="readmore" href="/blog/sass-abstraction-and-media-queries.html">Read More</a>
+    <a class="readmore" href="/sass-abstraction-and-media-queries.html">Read More</a>
   </article>
   
   <article class="blog">
