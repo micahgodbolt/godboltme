@@ -7,6 +7,9 @@ teaser: This week I spoke at the inaugural meeting of the PDX Sass and Front-end
 
 ### [Slides are available here](https://docs.google.com/presentation/d/1omeMewyR5w0znysQPpeSoZq9C7x2GKh6aksR66B0uYE/edit?usp=sharing)
 
+[Follow @PDXSass on Twitter](https://twitter.com/pdxsass)
+
+[Join the PDX Sass & Front-end Meetup G+ Community](https://plus.google.com/communities/103523084124594880402)
 
 
 
