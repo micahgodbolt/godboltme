@@ -16,3 +16,6 @@ teaser: This week I spoke at the inaugural meeting of the PDX Sass and Front-end
 
 <object width="560" height="315"><param name="movie" value="//www.youtube.com/v/ljPpTepThRI?version=3&amp;hl=en_US&amp;start=775"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/ljPpTepThRI?version=3&amp;hl=en_US&amp;start=775" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
+
+<iframe src="https://docs.google.com/presentation/embed?id=1omeMewyR5w0znysQPpeSoZq9C7x2GKh6aksR66B0uYE" frameborder="0" width="560" height="349"></iframe>
+
