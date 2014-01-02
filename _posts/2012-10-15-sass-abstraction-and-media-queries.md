@@ -2,7 +2,7 @@
 layout: blog
 title: Sass Abstraction and Media Queries
 category: blog
-teaser: @Brad_Frost pointed out a blog entry today by Bearded called The Thing About Those Media Types. The TL:DR of it is that some people use "screen" in their media queries, while others do not. Right now this is not a huge deal because almost all devices that are capable of displaying websites identify themselves as "screen" media type, even if they are a TV or a projector.
+teaser: Brad Frost pointed out a blog entry today by Bearded called The Thing About Those Media Types. The TL:DR of it is that some people use "screen" in their media queries, while others do not. Right now this is not a huge deal because almost all devices that are capable of displaying websites identify themselves as "screen" media type, even if they are a TV or a projector.
 ---
 
 [@Brad_Frost](https://twitter.com/brad_frost) pointed out a blog entry today by Bearded called [The Thing About Those Media Types](http://blog.bearded.com/post/33656467094/the-thing-about-those-media-types). The TL:DR of it is that some people use "screen" in their media queries, while others do not. Right now this is not a huge deal because almost all devices that are capable of displaying websites identify themselves as "screen" media type, even if they are a TV or a projector.
