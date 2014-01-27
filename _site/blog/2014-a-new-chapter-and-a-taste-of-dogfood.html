@@ -10,7 +10,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-   <title>  Teacher said to show my work so I am |  Micah Godbolt </title>
+   <title>  2014, A New Chapter and a Taste of Dogfood |  Micah Godbolt </title>
 
   <meta name="description" content="">
 
@@ -68,39 +68,30 @@
 
           <div class="threecolcenter">
     <article class="blog">
-      <h2>Teacher said to show my work so I am</h2>
-      <p>I have quite a bit on my plate with this current project. As the only developer I am tasked with the design, front end, and back end development of the entire site. With the design and front end coming together quite well in the past weeks I have been starting to focus on the back end. Having decided to build this site on Drupal, I knew there was going to be a steep learning curve to get to the point I wanted to be at.</p>
+      <h2>2014, A New Chapter and a Taste of Dogfood</h2>
+      <p>2013 was a banner year. I started working at one of the most well respected Drupal shops in the country. I traveled to Prague to speak at Drupalcon about my rapid prototyping framework, <a href='https://github.com/lullabot/tractor'>Tractor</a>. At CSS Dev Conf, in the historic Stanley Hotel, I spoke in front of some of my CSS idols about Getting Your Sass in Line. After spending the previous year being envious of Seattle&#8217;s Sass Meetup, I decided to start <a href='https://twitter.com/pdxsass'>PDX Sass</a> and now welcome dozens of front-end developers to our meetup at Puppet Labs each month. Lastly, after recording a few Sass demos for friends, I decided to just continue making demos, creating the <a href='http://www.youtube.com/sassbites'>Sass Bites Podcast</a>. Now with hundreds of Youtube subscribers and over 20 episodes under my belt, I feel like I am just getting started.</p>
 
-<p>I&#8217;ve never been one to just drop in a CMS, some modules and move on. I always want to understand as much of the process as possible. This probably comes from my background in audio production where one of the first things you learn to do is to follow the flow of the audio signal. If you know the exact path audio takes, it will be much easier to troubleshoot when a problem occurs. This same principal occurs in web development, where the more you know about the entire process of service a webpage to a client&#8217;s computer, the easier it is to make adustments and fix problems.</p>
-<h2>Diving Into Module Development</h2>
-<p>Recently I picked up <a href='http://www.amazon.com/Drupal-Module-Development-Matt-Butcher/dp/1849511160' target='_blank'>Drupal 7 Module Development</a>, a book written by several of the core contributors of the Drupal project. I thought that if anyone knew how to write this stuff, they must! Recently I&#8217;ve done most of my learning through video training, and my past experience diving into development books has been less than stellar, so I wanted to take a fresh approach. And I wanted to share that approach with you.</p>
+<p>So, not to be over shadowed, 2014 started off with a bang&#8230;and a job hunt. Fortunately, the first month ended with a job offer, and a great story to tell.</p>
 
-<p>D7 Module Development starts off creating a pretty simple module that replicates a &#8216;recent blog article&#8217; block. It has a database call, does some themeing, and then spits it out into a block. It would be really easy to just read over this chapter, going &#8220;yeah, ok ok, uh huh, got it, got it&#8221;, but in reality get only the basic concepts and miss almost all of the specifics. I reminded myself that I needed to learn to write this code line by line, so if there was a single line that I didn&#8217;t understand completely, I wouldn&#8217;t be able to reproduce it.</p>
-<h2>Back To School I Go</h2>
-<p>So I starting writing every single line of the module by hand as the author went through each section.</p>
-<div class='highlight'><pre><code class='php'><span class='x'>/**</span>
-<span class='x'> * Implements hook_theme()</span>
-<span class='x'> */</span>
-<span class='x'>function single_blog_theme($existing, $type, $theme, $path) {</span>
-<span class='x'>  return array (</span>
-<span class='x'>    &#39;single_blog_block_item&#39; =&gt; array (</span>
-<span class='x'>      &#39;variables&#39; =&gt; array (</span>
-<span class='x'>        &#39;node&#39; =&gt; NULL,</span>
-<span class='x'>      ),</span>
-<span class='x'>      &#39;template&#39; =&gt; &#39;single-blog-block-item&#39;,</span>
-<span class='x'>    ),</span>
-<span class='x'>  );</span>
-<span class='x'>}</span>
-</code></pre></div>
-<p>After the author finished with each draft of the module I would go back through it and write down the process, in english, step by step, as if I were describing it to another person.</p>
-<div class='highlight'><pre><code class='php'><span class='x'>single_blog_theme</span>
-<span class='x'>  defines a hook_theme called single_blog_block_item</span>
-<span class='x'>    variables passed to this theme hook is the &#39;#node&#39; =&gt; $node up in the block view</span>
-<span class='x'>    template defines an external template file, drupal tacks on the tpl.php</span>
-</code></pre></div>
-<p>This was harder to do than I thought! There were parts where I wasn&#8217;t sure why a certain function was necessary, or why the array key was named what it was. Once I was done though, I felt confident that I could exlain every line of the code to a total stranger. Therefore, I not only understod the module better, I had a better understanding of how Drupal used all of these various functions to do what it was doing under the hood. It was akin to setting up and tearing down the stage week after week, where you get really intimate with the signal flow from the stage microphones to the console and then back to the monitors.</p>
+<h2 id='eating_my_own_dogfood'>Eating my own dogfood</h2>
 
-<p>Sure this approach takes longer. I&#8217;ve only gotten through a single chapter like this. But now that chapter 5 staring back at me I feel confident that I understood 100% of previous chapter. My goal is to feel that way all the way through to the end of the book.</p>
+<p>I had spent the past several months at PDX Sass telling everyone how incredible the job market is for a well equipped Front-end Developer. It seemed my time had come to eat that dogfood, and see what it was really like to go out and try to find work. I was lucky enough to have my first job offer within a couple of weeks, and here are several factors that I think helped me accomplish that.</p>
+
+<ol>
+<li><strong>I had a large group of friends to call on.</strong> Between Twitter, Google Plus, and the meetups I lead or attended, I was never short for solid leads. There are dozens and dozens of Front-end jobs availble in this city, but the challenge is often just finding them. Out of the 8 that I applied for, I had only found one of them through a traditional job listing service. So it&#8217;s very true that &#8220;who you know&#8221; IS as important as &#8220;what you know&#8221;.</li>
+
+<li><strong>I had spent the past year leveling up.</strong> Our job is an ever changing landscape of technology. If you aren&#8217;t learning something new, you are falling behind. A front-end developer&#8217;s skill is no longer defined by their ability to wrangle IE7 and IE8 bugs. Sass and Javascript are no longer &#8220;nice to have&#8221; skills. Almost every position I applied for was looking for a solid Sass background and experience in Javascript MVC&#8217;s such as Angular, Backbone, or Ember.</li>
+
+<li><strong>I put a large amount of time into my personal brand.</strong> Between speaking at conferences, hosting and speaking at meetups, blogging and creating a podcast, I continued to push out quality content on Twitter and G+ and engage with other people in our industry. No matter the prestige of the position you hold, or the reputation of the company you work for, when you find yourself out on your own again, that is all but gone. The reputation and prestige you built around yourself, on the other hand, will always stay with you.</li>
+
+<li><strong>I gave my job hunt time.</strong> I didn&#8217;t simply accept the first offer I got, no matter how good it was. I also made sure everyone understood that I was looking at several options. Fortunately, no one ever had a problem with that. Most HR reps I spoke to assumed that I had other interviews going on at the same time. The end result was that I got to make a decision on my own schedule, not theirs.</li>
+
+<li><strong>I included my family in the discussion.</strong> This may seem like a no brainer, but the things that I am looking for aren&#8217;t always aligned with what my family needs. I turned down a few opportunities because they wouldn&#8217;t provide the stability or environment I needed to be the husband and father I needed to be.</li>
+
+<li><strong>I made a decision for my future, not just my tomorrow.</strong> In the end my decision wasn&#8217;t about money, or a fancy title. I decided to accept an offer with <a href='http://www.phase2technology.com/'>Phase 2</a> because I am confident that when I look back at this decision 5 years from now, I will know that I made the right decision. I have room to grow, room to learn, and room to make an impact with the work that I do.</li>
+</ol>
+
+<p>Thanks again to everyone that retweeted my &#8216;looking for a job&#8217; tweet. Thanks to everyone that sent me a referal, or spoke on my behalf. Thanks to all of the companies that reached out to me, interviewed me, and gave me a chance to show you what I was made of. I am glad I had this opportunity to eat my own dogfood, and I&#8217;m SOOO glad that it didn&#8217;t take like crap! We work in an incredibe industry, and I&#8217;m very proud to call myself a Front-end Developer.</p>
       </article>
 
 
